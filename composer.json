@@ -1,0 +1,36 @@
+{
+    "name": "b14ckp4nd4/ton-php-sdk",
+    "description": "A PHP SDK for interacting with the TON blockchain network using the Toncenter API. Designed for both Laravel and standalone PHP projects.",
+    "keywords": ["TON", "blockchain", "PHP", "SDK", "Toncenter API", "Laravel"],
+    "homepage": "https://github.com/B14ckP4nd4/ton-php-sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BlackPanda",
+            "email": "B14ckP4nd4@users.noreply.github.com",
+            "homepage": "https://github.com/B14ckP4nd4",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BlackPanda\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlackPanda\\TonServiceProvider"
+            ]
+        }
+    }
+}
